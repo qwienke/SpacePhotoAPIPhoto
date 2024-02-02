@@ -13,6 +13,8 @@
 		E48F87DA2B6B00990013747F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48F87D82B6B00990013747F /* Main.storyboard */; };
 		E48F87DC2B6B009A0013747F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48F87DB2B6B009A0013747F /* Assets.xcassets */; };
 		E48F87DF2B6B009A0013747F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48F87DD2B6B009A0013747F /* LaunchScreen.storyboard */; };
+		E48F87E72B6B01280013747F /* PhotoInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F87E62B6B01280013747F /* PhotoInfoController.swift */; };
+		E48F87E92B6B016F0013747F /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F87E82B6B016F0013747F /* PhotoInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E48F87DB2B6B009A0013747F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E48F87DE2B6B009A0013747F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E48F87E02B6B009A0013747F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48F87E62B6B01280013747F /* PhotoInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoController.swift; sourceTree = "<group>"; };
+		E48F87E82B6B016F0013747F /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				E48F87D22B6B00990013747F /* AppDelegate.swift */,
 				E48F87D42B6B00990013747F /* SceneDelegate.swift */,
 				E48F87D62B6B00990013747F /* ViewController.swift */,
+				E48F87E62B6B01280013747F /* PhotoInfoController.swift */,
+				E48F87E82B6B016F0013747F /* PhotoInfo.swift */,
 				E48F87D82B6B00990013747F /* Main.storyboard */,
 				E48F87DB2B6B009A0013747F /* Assets.xcassets */,
 				E48F87DD2B6B009A0013747F /* LaunchScreen.storyboard */,
@@ -140,7 +146,9 @@
 			files = (
 				E48F87D72B6B00990013747F /* ViewController.swift in Sources */,
 				E48F87D32B6B00990013747F /* AppDelegate.swift in Sources */,
+				E48F87E72B6B01280013747F /* PhotoInfoController.swift in Sources */,
 				E48F87D52B6B00990013747F /* SceneDelegate.swift in Sources */,
+				E48F87E92B6B016F0013747F /* PhotoInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
