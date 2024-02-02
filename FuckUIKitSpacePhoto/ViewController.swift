@@ -34,21 +34,29 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func updateUI(with photoInfo: PhotoInfo) {
+        Task {
+            do {
+                let image = try await photoInfoController.fetchImage(from: photoInfo.url)
+                title = photoInfo.title
+                imageView.image = image
+                descriptionLabel.text = photoInfo.description
+                copyrightLabel.text = photoInfo.copyright
+            } catch  {
+                updateUI(with: error)
+            }
+        }
+    }
+    
+    func updateUI(with error: Error) {
+        title = "Error Fetching Photo"
+        imageView.image = UIImage(systemName: "exlimationmark.octagon")
+        descriptionLabel.text = error.localizedDescription
+        copyrightLabel.text = ""
+    }
 
 
 }
 
-//
-//do {
-//        let photoInfo = try await photoInfoController.fetchPhotoInfo()
-//        self.title = photoInfo.title
-//        self.descriptionLabel.text = photoInfo.description
-//        self.copyrightLabel.text = photoInfo.copyright
-//    } catch {
-//        self.title = "Error Fetching Photo"
-//        self.imageView.image = UIImage(systemName:
-//           "exclamationmark.octagon")
-//        self.descriptionLabel.text = error.localizedDescription
-//        self.copyrightLabel.text = ""
-//    }
 
